@@ -7,9 +7,9 @@ const PORT = 3000;
 app.use(
     express.static(path.join(__dirname, "build"), {
         maxAge: "365d", // Cache max age for static files.
-        setHeaders: (res, path) => {
+        setHeaders: (res, filePath) => {
             // Custom caching for index.html.
-            if (path.endsWith("index.html")) res.setHeader("Cache-Control", "s-maxage=5, stale-while-revalidate");
+            if (filePath.endsWith("index.html")) res.setHeader("Cache-Control", "s-maxage=5, stale-while-revalidate");
         },
     })
 );
