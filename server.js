@@ -4,11 +4,14 @@ const app = express();
 
 const PORT = 3000;
 
+app.disable("x-powered-by");
+
 // Prevent viewing the asset-manifest.json file.
 app.get("/asset-manifest.json", function (req, res) {
     res.status(403).redirect("/");
 });
 
+// Handling for all static files.
 app.use(
     express.static(path.join(__dirname, "build"), {
         index: "index.html",
