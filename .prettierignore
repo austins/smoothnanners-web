@@ -1,0 +1,13 @@
+*
+!/**/
+!*.js
+!*.ts
+!*.jsx
+!*.tsx
+!*.json
+!*.css
+!*.scss
+/node_modules
+/out
+/build
+package-lock.json
