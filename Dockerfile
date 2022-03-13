@@ -23,8 +23,8 @@ WORKDIR /app
 ENV NODE_ENV=production
 
 COPY --from=builder /app/server.js ./
-COPY --from=builder --chown=node:node /app/build ./
-RUN npm install -g express
+COPY --from=builder /app/node_modules ./node_modules
+COPY --from=builder --chown=node:node /app/build ./build
 
 USER node
 
