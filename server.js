@@ -3,10 +3,9 @@ const express = require("express");
 const app = express();
 
 const PORT = 3000;
-const BUILD_PATH = process.env.NODE_ENV === "production" ? path.join(__dirname) : path.join(__dirname, "build");
 
 app.use(
-    express.static(BUILD_PATH, {
+    express.static(path.join(__dirname, "build"), {
         maxAge: "365d", // Cache max age for static files.
         setHeaders: (res, path) => {
             // Custom caching for index.html.
@@ -16,7 +15,7 @@ app.use(
 );
 
 app.get("/", function (req, res) {
-    res.sendFile(path.join(BUILD_PATH, "index.html"), {});
+    res.sendFile(path.join(__dirname, "build", "index.html"), {});
 });
 
 app.get("*", function (req, res) {
