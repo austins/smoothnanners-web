@@ -4,8 +4,14 @@ const app = express();
 
 const PORT = 3000;
 
+// Prevent viewing the asset-manifest.json file.
+app.get("/asset-manifest.json", function (req, res) {
+    res.status(403).redirect("/");
+});
+
 app.use(
     express.static(path.join(__dirname, "build"), {
+        index: "index.html",
         maxAge: "365d", // Cache max age for static files.
         setHeaders: (res, filePath) => {
             // Custom caching for index.html.
@@ -14,10 +20,7 @@ app.use(
     })
 );
 
-app.get("/", function (req, res) {
-    res.sendFile(path.join(__dirname, "build", "index.html"), {});
-});
-
+// Handling for not found. This should be the last route.
 app.get("*", function (req, res) {
     res.status(404).redirect("/");
 });
