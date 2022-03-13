@@ -22,11 +22,12 @@ WORKDIR /app
 
 ENV NODE_ENV=production
 
+COPY --from=builder /app/server.js ./
 COPY --from=builder --chown=node:node /app/build ./
-RUN npm install -g serve
+RUN npm install -g express
 
 USER node
 
 EXPOSE 3000
 
-CMD ["serve", "-s", "."]
+CMD ["node", "server.js"]
