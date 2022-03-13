@@ -1,3 +1,3 @@
-The SmoothNanners website.
+The [SmoothNanners](https://smoothnanners.com) website.
 
 Powered by React.

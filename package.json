@@ -1,5 +1,5 @@
 {
-    "name": "smoothnanners",
+    "name": "smoothnanners-web",
     "private": true,
     "scripts": {
         "start": "react-scripts start",
