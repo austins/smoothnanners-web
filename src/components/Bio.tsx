@@ -12,7 +12,6 @@ export default function Bio() {
                     className={`img-fluid rounded-2`}
                     layout="responsive"
                     quality={100}
-                    priority
                 />
             </div>
 
