@@ -8,6 +8,7 @@
 !*.css
 !*.scss
 /node_modules
+/.next
 /out
 /build
 package-lock.json

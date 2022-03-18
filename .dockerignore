@@ -4,5 +4,10 @@ node_modules
 npm-debug.log
 .editorconfig
 README.md
+.next
 out
 build
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local

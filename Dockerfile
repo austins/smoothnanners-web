@@ -22,9 +22,12 @@ WORKDIR /app
 
 ENV NODE_ENV=production
 
-COPY --from=builder /app/node_modules ./node_modules
-COPY --from=builder --chown=node:node /app/server.js ./
-COPY --from=builder --chown=node:node /app/build ./build
+COPY --from=builder /app/.env ./
+COPY --from=builder /app/next.config.js ./
+COPY --from=builder /app/public ./public
+COPY --from=builder --chown=node:node /app/.next/standalone ./
+COPY --from=builder --chown=node:node /app/.next/static ./.next/static
+COPY --from=builder /app/package-lock.json ./package-lock.json
 
 USER node
 

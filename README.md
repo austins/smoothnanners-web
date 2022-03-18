@@ -1,6 +1,6 @@
 The [SmoothNanners](https://smoothnanners.com) website.
 
-Powered by React.
+Powered by Next.js.
 
 ## Development
 
