@@ -6,7 +6,14 @@ export default function Bio() {
     return (
         <div className="d-flex mb-4">
             <div className={`flex-shrink-1 ${styles.avatar}`}>
-                <Image src={avatar} alt="SmoothNanners" className={`img-fluid rounded-2`} layout="responsive" />
+                <Image
+                    src={avatar}
+                    alt="SmoothNanners"
+                    className={`img-fluid rounded-2`}
+                    layout="responsive"
+                    quality={100}
+                    priority
+                />
             </div>
 
             <div id="bio" className={`w-100 text-white fs-5 ms-3 ${styles.bio}`}>
