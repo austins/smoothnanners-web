@@ -1,6 +1,5 @@
 # Install dependencies only when needed.
 FROM node:lts-buster-slim AS deps
-RUN apk add --no-cache libc6-compat
 WORKDIR /app
 COPY package.json package-lock.json ./
 RUN npm ci
