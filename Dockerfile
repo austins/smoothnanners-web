@@ -1,12 +1,12 @@
 # Install dependencies only when needed.
-FROM node:lts-alpine AS deps
+FROM node:lts-buster-slim AS deps
 RUN apk add --no-cache libc6-compat
 WORKDIR /app
 COPY package.json package-lock.json ./
 RUN npm ci
 
 # Rebuild the source code only when needed.
-FROM node:lts-alpine AS builder
+FROM node:lts-buster-slim AS builder
 WORKDIR /app
 
 ENV NODE_ENV=production
