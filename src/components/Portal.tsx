@@ -2,6 +2,7 @@ import styles from "../styles/Portal.module.scss";
 import {
     At,
     Code,
+    Coins,
     DiscordLogo,
     GameController,
     GithubLogo,
@@ -172,8 +173,18 @@ export default function Portal() {
                                     variant="dark"
                                     size="lg"
                                     className="text-start"
-                                    href="mailto:austin@austinsdev.com"
+                                    href="https://streamelements.com/smoothnanners/tip"
                                     target="_blank"
+                                >
+                                    <Coins weight="regular" />
+                                    <div className={styles.buttonLinkText}>Donate / Tip</div>
+                                </Button>
+
+                                <Button
+                                    variant="dark"
+                                    size="lg"
+                                    className="text-start"
+                                    href="mailto:austin@austinsdev.com"
                                 >
                                     <At weight="regular" />
                                     <div className={styles.buttonLinkText}>Email</div>
