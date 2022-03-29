@@ -30,7 +30,7 @@
         "@types/react": "^17.0.43",
         "cross-env": "^7.0.3",
         "eslint": "^8.12.0",
-        "eslint-config-next": "^12.1.1",
+        "eslint-config-next": "^12.1.2",
         "eslint-config-prettier": "^8.5.0",
         "prettier": "^2.6.1",
         "sass": "^1.49.9",
