@@ -81,3 +81,4 @@ jobs:
                 with:
                     github-token: ${{ secrets.GITHUB_TOKEN }}
                     target: minor
+                    approve-only: true
