@@ -10,10 +10,7 @@ type Props = {
 export default function HeadWithTitle({ title, noIndex, description, children }: Props) {
     return (
         <Head>
-            <title>
-                {title && title.length > 0 ? `${title} – ` : ""}
-                SmoothNanners
-            </title>
+            <title>{(title && title.length > 0 ? `${title} – ` : "") + "SmoothNanners"}</title>
 
             {noIndex && <meta name="robots" content="noindex" />}
 
