@@ -13,6 +13,7 @@ jobs:
         uses: ./.github/workflows/analyze.yml
     build:
         name: Build
+        needs: analyze
         runs-on: ubuntu-latest
         steps:
             - name: Checkout
