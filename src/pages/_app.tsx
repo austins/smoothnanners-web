@@ -1,10 +1,10 @@
-import "../styles/ClientApp.scss";
-import type { AppProps } from "next/app";
+import "../styles/App.scss";
 import { Container } from "react-bootstrap";
 import HeadWithTitle from "../components/HeadWithTitle";
 import Header from "../components/Header";
+import type { AppType } from "next/dist/shared/lib/utils";
 
-function ClientApp({ Component, pageProps }: AppProps) {
+const App: AppType = ({ Component, pageProps }) => {
     return (
         <>
             <HeadWithTitle description="SmoothNanners is a gamer, musician, software developer, and photographer." />
@@ -20,6 +20,6 @@ function ClientApp({ Component, pageProps }: AppProps) {
             </Container>
         </>
     );
-}
+};
 
-export default ClientApp;
+export default App;

@@ -4,13 +4,6 @@ const { withPlugins, optional } = require("next-compose-plugins");
 const nextConfig = {
     reactStrictMode: true,
     swcMinify: true,
-    experimental: { outputStandalone: true },
-    images: {
-        deviceSizes: [540, 600],
-        imageSizes: [16, 32, 64, 128],
-    },
-    poweredByHeader: false,
-    compress: false,
 };
 
 module.exports = withPlugins(
