@@ -15,8 +15,8 @@ concurrency:
 jobs:
     analyze:
         uses: ./.github/workflows/analyze.yml
-    build:
-        name: Build
+    deploy:
+        name: Build & deploy
         needs: analyze
         runs-on: ubuntu-latest
         steps:
