@@ -5,10 +5,10 @@
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "export": "next export",
+        "export": "npm run build && next export",
         "lint": "next lint . --ext .js --ext .ts --ext .jsx --ext .tsx",
         "format": "npx prettier --write . && npm run lint -- --fix",
-        "analyze": "cross-env ANALYZE=true next build"
+        "analyze": "cross-env ANALYZE=true npm run build"
     },
     "engines": {
         "node": ">=16.13.1"
