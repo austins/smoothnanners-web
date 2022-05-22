@@ -1,9 +1,20 @@
 import type { NextPage } from "next";
-import { StatusCodes } from "http-status-codes";
-import Error from "../components/Error";
+import HeadWithTitle from "@/components/HeadWithTitle";
 
 const Custom404: NextPage = () => {
-    return <Error statusCode={StatusCodes.NOT_FOUND} />;
+    const title = "Page Not Found";
+
+    return (
+        <>
+            <HeadWithTitle title={title} noIndex />
+
+            <div className="text-white-50">
+                <h1>{title}</h1>
+
+                <div>This page could not be found.</div>
+            </div>
+        </>
+    );
 };
 
 export default Custom404;
