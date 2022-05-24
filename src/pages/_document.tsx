@@ -8,7 +8,7 @@ export default class Document extends NextDocument {
                     <link rel="icon" href="/favicon.ico" />
 
                     <link
-                        href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&family=Open+Sans:wght@300&display=optional"
+                        href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&family=Open+Sans:wght@300&display=swap"
                         rel="stylesheet"
                     />
                 </Head>
