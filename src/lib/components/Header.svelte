@@ -1,0 +1,16 @@
+<header>
+    <h1 id="header-text" class="mb-2 text-white">SmoothNanners</h1>
+</header>
+
+<style lang="scss">
+    #header-text {
+        font-family: "Kalam", $font-family-sans-serif;
+        font-size: 3.5rem;
+        text-shadow: 0 0 2px rgba(255, 255, 255, 0.8), 0 0 4px rgba(255, 255, 255, 0.3),
+            0 0 1rem rgba(255, 255, 255, 0.2), 0 0 4rem rgba(68, 217, 232, 0.1);
+
+        @include media-breakpoint-down(sm) {
+            font-size: 9.7vw !important;
+        }
+    }
+</style>

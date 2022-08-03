@@ -1,65 +1,66 @@
 {
-    "folders": [
-        {
-            "path": "."
-        }
-    ],
-    "settings": {
-        "editor.formatOnSave": true,
-        "[javascript]": {
-            "editor.defaultFormatter": "esbenp.prettier-vscode"
-        },
-        "[typescript]": {
-            "editor.defaultFormatter": "esbenp.prettier-vscode"
-        },
-        "[javascriptreact]": {
-            "editor.defaultFormatter": "esbenp.prettier-vscode"
-        },
-        "[typescriptreact]": {
-            "editor.defaultFormatter": "esbenp.prettier-vscode"
-        },
-        "[json]": {
-            "editor.defaultFormatter": "esbenp.prettier-vscode"
-        },
-        "[jsonc]": {
-            "editor.defaultFormatter": "esbenp.prettier-vscode"
-        },
-        "[css]": {
-            "editor.defaultFormatter": "esbenp.prettier-vscode"
-        },
-        "[scss]": {
-            "editor.defaultFormatter": "esbenp.prettier-vscode"
-        },
-        "[yaml]": {
-            "editor.defaultFormatter": "esbenp.prettier-vscode"
-        },
-        "editor.codeActionsOnSave": {
-            "source.fixAll.eslint": true
-        },
-        "eslint.validate": ["javascript", "typescript", "javascriptreact", "typescriptreact"],
-        "yaml.schemas": {
-            "https://json.schemastore.org/github-workflow.json": "/.github/workflows/*.yml"
-        }
-    },
-    "extensions": {
-        "recommendations": [
-            "eg2.vscode-npm-script",
-            "dbaeumer.vscode-eslint",
-            "esbenp.prettier-vscode",
-            "redhat.vscode-yaml"
-        ]
-    },
-    "launch": {
-        "configurations": [
-            {
-                "name": "dev",
-                "request": "launch",
-                "runtimeArgs": ["run", "dev"],
-                "runtimeExecutable": "npm",
-                "cwd": "${workspaceRoot}",
-                "skipFiles": ["<node_internals>/**"],
-                "type": "node"
-            }
-        ]
-    }
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"editor.formatOnSave": true,
+		"[javascript]": {
+			"editor.defaultFormatter": "esbenp.prettier-vscode"
+		},
+		"[typescript]": {
+			"editor.defaultFormatter": "esbenp.prettier-vscode"
+		},
+		"[svelte]": {
+			"editor.defaultFormatter": "svelte.svelte-vscode"
+		},
+		"[json]": {
+			"editor.defaultFormatter": "esbenp.prettier-vscode"
+		},
+		"[jsonc]": {
+			"editor.defaultFormatter": "esbenp.prettier-vscode"
+		},
+		"[html]": {
+			"editor.defaultFormatter": "esbenp.prettier-vscode"
+		},
+		"[css]": {
+			"editor.defaultFormatter": "esbenp.prettier-vscode"
+		},
+		"[scss]": {
+			"editor.defaultFormatter": "esbenp.prettier-vscode"
+		},
+		"[yaml]": {
+			"editor.defaultFormatter": "esbenp.prettier-vscode"
+		},
+		"editor.codeActionsOnSave": {
+			"source.fixAll.eslint": true
+		},
+		"eslint.validate": ["javascript", "typescript", "svelte"],
+		"yaml.schemas": {
+			"https://json.schemastore.org/github-workflow.json": "/.github/workflows/*.yml"
+		}
+	},
+	"extensions": {
+		"recommendations": [
+			"eg2.vscode-npm-script",
+			"dbaeumer.vscode-eslint",
+			"esbenp.prettier-vscode",
+			"redhat.vscode-yaml",
+			"svelte.svelte-vscode"
+		]
+	},
+	"launch": {
+		"configurations": [
+			{
+				"name": "dev",
+				"request": "launch",
+				"runtimeArgs": ["run", "dev"],
+				"runtimeExecutable": "npm",
+				"cwd": "${workspaceRoot}",
+				"skipFiles": ["<node_internals>/**"],
+				"type": "node"
+			}
+		]
+	}
 }
