@@ -1,7 +1,3 @@
-<script lang="ts">
-    import Header from "$lib/components/Header.svelte";
-</script>
-
 <svelte:head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -13,7 +9,9 @@
 
 <div id="main" class="container d-flex align-items-center py-3">
     <div class="w-100">
-        <Header />
+        <header>
+            <h1 id="header-text" class="mb-2 text-white">SmoothNanners</h1>
+        </header>
 
         <main><slot /></main>
     </div>
@@ -66,6 +64,17 @@
             $body-bg 12%,
             shade-color(#173e98, 50%) 100%
         );
+    }
+
+    #header-text {
+        font-family: "Kalam", $font-family-sans-serif;
+        font-size: 3.5rem;
+        text-shadow: 0 0 2px rgba(255, 255, 255, 0.8), 0 0 4px rgba(255, 255, 255, 0.3),
+            0 0 1rem rgba(255, 255, 255, 0.2), 0 0 4rem rgba(68, 217, 232, 0.1);
+
+        @include media-breakpoint-down(sm) {
+            font-size: 9.7vw !important;
+        }
     }
 
     #main {
