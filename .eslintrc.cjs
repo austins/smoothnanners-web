@@ -23,13 +23,17 @@ module.exports = {
         node: true,
     },
     rules: {
-        eqeqeq: "error",
         "@typescript-eslint/consistent-type-imports": "error",
         "@typescript-eslint/no-non-null-assertion": "off",
         "@typescript-eslint/no-misused-promises": ["error", { checksVoidReturn: false }],
         "@typescript-eslint/no-unused-vars": "off",
         "@typescript-eslint/no-unsafe-assignment": "off",
         "@typescript-eslint/no-unsafe-argument": "off",
+        eqeqeq: "error",
+        curly: ["error", "all"],
+        "brace-style": ["error", "1tbs"],
+        "arrow-body-style": ["error", "always"],
+        "object-shorthand": ["error", "always"],
         "unused-imports/no-unused-imports": "error",
         "no-restricted-imports": [
             "error",
