@@ -20,7 +20,7 @@
         "@sveltejs/kit": "next",
         "@types/html-minifier": "^4.0.2",
         "@typescript-eslint/eslint-plugin": "^5.33.1",
-        "@typescript-eslint/parser": "^5.33.0",
+        "@typescript-eslint/parser": "^5.33.1",
         "bootstrap": "^5.2.0",
         "bootswatch": "^5.2.0",
         "eslint": "^8.22.0",
