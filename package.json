@@ -23,7 +23,7 @@
         "@typescript-eslint/parser": "^5.35.1",
         "bootstrap": "^5.2.0",
         "bootswatch": "^5.2.0",
-        "eslint": "^8.22.0",
+        "eslint": "^8.23.0",
         "eslint-config-prettier": "^8.3.0",
         "eslint-plugin-svelte3": "^4.0.0",
         "eslint-plugin-unused-imports": "^2.0.0",
