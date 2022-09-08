@@ -21,7 +21,7 @@
         "@types/html-minifier": "^4.0.2",
         "@typescript-eslint/eslint-plugin": "^5.36.2",
         "@typescript-eslint/parser": "^5.36.2",
-        "bootstrap": "^5.2.0",
+        "bootstrap": "^5.2.1",
         "bootswatch": "^5.2.0",
         "eslint": "^8.23.0",
         "eslint-config-prettier": "^8.3.0",
