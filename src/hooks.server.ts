@@ -1,5 +1,5 @@
 import { minify, type Options } from "html-minifier";
-import { prerendering } from "$app/env";
+import { prerendering } from "$app/environment";
 import type { Handle } from "@sveltejs/kit";
 
 const minificationOptions: Options = {

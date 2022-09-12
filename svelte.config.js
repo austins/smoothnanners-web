@@ -14,11 +14,6 @@ const config = {
             fallback: null,
             precompress: false,
         }),
-        browser: {
-            router: false,
-            hydrate: false,
-        },
-        prerender: { default: true },
     },
 };
 
