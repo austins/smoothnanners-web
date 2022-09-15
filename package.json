@@ -17,7 +17,7 @@
     "devDependencies": {
         "@popperjs/core": "^2.11.6",
         "@sveltejs/adapter-static": "^1.0.0-next.43",
-        "@sveltejs/kit": "^1.0.0-next.481",
+        "@sveltejs/kit": "^1.0.0-next.483",
         "@types/html-minifier": "^4.0.2",
         "@typescript-eslint/eslint-plugin": "^5.37.0",
         "@typescript-eslint/parser": "^5.37.0",
