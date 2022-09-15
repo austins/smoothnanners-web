@@ -13,11 +13,6 @@ concurrency:
     group: deploy
     cancel-in-progress: true
 
-permissions:
-    contents: read
-    pages: write
-    id-token: write
-
 jobs:
     analyze:
         uses: ./.github/workflows/analyze.yml
@@ -32,6 +27,10 @@ jobs:
               uses: withastro/action@v0
     deploy:
         needs: build
+        permissions:
+            contents: read
+            pages: write
+            id-token: write
         runs-on: ubuntu-latest
         environment:
             name: github-pages
