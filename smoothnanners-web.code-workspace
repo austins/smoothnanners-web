@@ -12,8 +12,14 @@
         "[typescript]": {
             "editor.defaultFormatter": "esbenp.prettier-vscode"
         },
-        "[svelte]": {
-            "editor.defaultFormatter": "svelte.svelte-vscode"
+        "[javascriptreact]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[typescriptreact]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[astro]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
         },
         "[json]": {
             "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -36,7 +42,7 @@
         "editor.codeActionsOnSave": {
             "source.fixAll.eslint": true
         },
-        "eslint.validate": ["javascript", "typescript", "svelte"],
+        "eslint.validate": ["javascript", "typescript", "javascriptreact", "typescriptreact", "astro"],
         "yaml.schemas": {
             "https://json.schemastore.org/github-workflow.json": "/.github/workflows/*.yml"
         }
@@ -46,19 +52,16 @@
             "dbaeumer.vscode-eslint",
             "esbenp.prettier-vscode",
             "redhat.vscode-yaml",
-            "svelte.svelte-vscode"
+            "astro-build.astro-vscode"
         ]
     },
     "launch": {
         "configurations": [
             {
+                "command": "./node_modules/.bin/astro dev",
                 "name": "dev",
                 "request": "launch",
-                "runtimeArgs": ["run", "dev"],
-                "runtimeExecutable": "npm",
-                "cwd": "${workspaceRoot}",
-                "skipFiles": ["<node_internals>/**"],
-                "type": "node"
+                "type": "node-terminal"
             }
         ]
     }

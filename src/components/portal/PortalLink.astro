@@ -1,0 +1,17 @@
+---
+import type { BootstrapVariant } from "src/additional";
+
+export interface Props {
+    variant: BootstrapVariant;
+    url: string;
+    text: string;
+}
+
+const { variant, url, text } = Astro.props;
+---
+
+<a href={url} class={`btn btn-${variant} btn-lg text-start d-flex align-items-center`} target="_blank">
+    <slot />
+
+    <div class="d-inline-block align-middle ms-2">{text}</div>
+</a>
