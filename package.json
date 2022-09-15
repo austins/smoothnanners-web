@@ -11,6 +11,9 @@
         "lint": "tsc --noEmit && astro check && eslint . --ext .js --ext .ts --ext .jsx --ext .tsx",
         "format": "npm run lint -- --fix && prettier --write --plugin-search-dir=. ."
     },
+    "engines": {
+        "node": ">=16.17.0"
+    },
     "dependencies": {
         "@astrojs/image": "^0.7.0",
         "@astrojs/react": "^1.1.3",
