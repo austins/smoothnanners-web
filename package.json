@@ -16,7 +16,7 @@
     },
     "dependencies": {
         "@astrojs/image": "^0.9.3",
-        "@astrojs/react": "^1.1.4",
+        "@astrojs/react": "^1.2.0",
         "@fontsource/kalam": "^4.5.10",
         "@fontsource/open-sans": "^4.5.12",
         "@popperjs/core": "^2.11.6",
