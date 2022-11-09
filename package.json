@@ -15,7 +15,7 @@
         "node": ">=16.17.0"
     },
     "dependencies": {
-        "@astrojs/image": "^0.10.0",
+        "@astrojs/image": "^0.11.2",
         "@astrojs/react": "^1.2.1",
         "@fontsource/kalam": "^4.5.10",
         "@fontsource/open-sans": "^4.5.13",
