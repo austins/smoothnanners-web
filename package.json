@@ -4,40 +4,39 @@
     "type": "module",
     "scripts": {
         "dev": "astro dev",
-        "start": "astro dev",
         "build": "npm run lint && astro build",
         "preview": "astro preview",
-        "astro": "astro",
-        "lint": "tsc --noEmit && astro check && eslint . --ext .js --ext .ts --ext .jsx --ext .tsx",
-        "format": "npm run lint -- --fix && prettier --write --plugin-search-dir=. ."
+        "lint": "tsc --noEmit && astro check && npm run lint:eslint",
+        "lint:eslint": "eslint . --ext .js --ext .ts --ext .jsx --ext .tsx",
+        "format": "npm run lint:eslint -- --fix && prettier --write --plugin-search-dir=. ."
     },
     "engines": {
         "node": ">=16.17.0"
     },
     "dependencies": {
-        "@astrojs/image": "^0.10.0",
-        "@astrojs/react": "^1.2.1",
+        "@astrojs/image": "^0.11.6",
+        "@astrojs/react": "^1.2.2",
         "@fontsource/kalam": "^4.5.10",
         "@fontsource/open-sans": "^4.5.13",
         "@popperjs/core": "^2.11.6",
-        "astro": "^1.5.2",
-        "bootstrap": "^5.2.2",
+        "astro": "^1.6.11",
+        "bootstrap": "^5.2.3",
         "bootswatch": "^5.2.2",
         "phosphor-react": "^1.4.1",
         "react": "^18.2.0",
         "react-dom": "^18.2.0"
     },
     "devDependencies": {
-        "@types/node": "^18.11.5",
-        "@types/react": "^18.0.23",
-        "@types/react-dom": "^18.0.7",
-        "@typescript-eslint/eslint-plugin": "^5.41.0",
-        "@typescript-eslint/parser": "^5.41.0",
-        "eslint": "^8.26.0",
-        "eslint-plugin-astro": "^0.20.0",
+        "@types/node": "^18.11.9",
+        "@types/react": "^18.0.25",
+        "@types/react-dom": "^18.0.9",
+        "@typescript-eslint/eslint-plugin": "^5.45.0",
+        "@typescript-eslint/parser": "^5.45.0",
+        "eslint": "^8.28.0",
+        "eslint-plugin-astro": "^0.21.0",
         "eslint-plugin-unused-imports": "^2.0.0",
-        "prettier": "^2.7.1",
-        "prettier-plugin-astro": "^0.6.0",
-        "sass": "^1.55.0"
+        "prettier": "^2.8.0",
+        "prettier-plugin-astro": "^0.7.0",
+        "sass": "1.55.0"
     }
 }
