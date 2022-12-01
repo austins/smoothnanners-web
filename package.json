@@ -19,7 +19,7 @@
         "@fontsource/kalam": "^4.5.10",
         "@fontsource/open-sans": "^4.5.13",
         "@popperjs/core": "^2.11.6",
-        "astro": "^1.6.11",
+        "astro": "^1.6.12",
         "bootstrap": "^5.2.3",
         "bootswatch": "^5.2.2",
         "phosphor-react": "^1.4.1",
