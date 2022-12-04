@@ -115,17 +115,17 @@ const iconProps: IconProps = {
     </PortalSection>
 </Layout>
 
-<style lang="scss">
+<style>
     #avatar {
         width: 264px;
-
-        @include media-breakpoint-down(sm) {
-            max-width: 27.4vw;
-        }
     }
 
-    #bio {
-        @include media-breakpoint-down(sm) {
+    @media only screen and (max-width: 575px) {
+        #avatar {
+            max-width: 27.4vw;
+        }
+
+        #bio {
             font-size: 3.4vw !important;
         }
     }

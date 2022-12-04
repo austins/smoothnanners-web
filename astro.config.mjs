@@ -5,15 +5,6 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
-    integrations: [image(), react()],
-    vite: {
-        css: {
-            preprocessorOptions: {
-                scss: {
-                    additionalData: '@use "src/variables.scss" as *;',
-                },
-            },
-        },
-    },
+    integrations: [image({ serviceEntryPoint: "@astrojs/image/sharp" }), react()],
     site: "https://smoothnanners.com",
 });
