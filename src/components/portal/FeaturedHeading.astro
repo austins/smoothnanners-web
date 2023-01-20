@@ -1,0 +1,21 @@
+---
+import type { IconProps } from "phosphor-react";
+import { Star } from "phosphor-react";
+
+export interface Props {
+    iconProps: IconProps;
+}
+
+const { iconProps } = Astro.props;
+---
+
+<div class="fs-5 title-featured">
+    <Star {...iconProps} size="26" />
+    <div class="d-inline-block align-middle">Featured</div>
+</div>
+
+<style>
+    .title-featured {
+        margin-bottom: -0.5rem;
+    }
+</style>
