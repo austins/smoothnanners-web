@@ -5,6 +5,7 @@
 
 <svelte:head>
     <title>Error: {$page.status} - SmoothNanners</title>
+    <meta name="robots" content="noindex" />
 </svelte:head>
 
 <Error />
