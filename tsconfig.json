@@ -1,12 +1,14 @@
 {
-    "extends": "astro/tsconfigs/strict",
+    "extends": "./.svelte-kit/tsconfig.json",
     "compilerOptions": {
-        "baseUrl": ".",
-        "paths": {
-            "@assets/*": ["src/assets/*"],
-            "@components/*": ["src/components/*"],
-            "@layouts/*": ["src/layouts/*"]
-        },
-        "jsx": "react-jsx"
+        "allowJs": true,
+        "checkJs": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "resolveJsonModule": true,
+        "skipLibCheck": true,
+        "sourceMap": true,
+        "strict": true,
+        "noUncheckedIndexedAccess": true
     }
 }

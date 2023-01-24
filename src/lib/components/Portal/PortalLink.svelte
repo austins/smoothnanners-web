@@ -1,0 +1,22 @@
+<script lang="ts">
+    import type { default as IconComponent } from "~icons/*";
+
+    export let icon: typeof IconComponent;
+    export let text: string;
+    export let href: string;
+    export let color: "rose" | "purple" | "sky" | "dark";
+</script>
+
+<a
+    {href}
+    target="_blank"
+    rel="noreferrer"
+    class="mb-3 block rounded-md py-2 px-3 last:mb-0 hover:brightness-[0.85]"
+    class:bg-rose-500={color === "rose"}
+    class:bg-purple-500={color === "purple"}
+    class:bg-sky-600={color === "sky"}
+    class:bg-indigo-700={color === "dark"}
+>
+    <svelte:component this={icon} class="inline-block" />
+    {text}
+</a>
