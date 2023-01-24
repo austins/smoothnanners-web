@@ -14,6 +14,7 @@
             rel="noreferrer"
             on:click|preventDefault={() => (showEmbed = true)}
             class="relative block"
+            data-sveltekit-preload-data="off"
         >
             <div class="absolute flex h-full w-full items-center justify-center text-6xl hover:brightness-[0.85]">
                 <LogosYoutubeIcon />

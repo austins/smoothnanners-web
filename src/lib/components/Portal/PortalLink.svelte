@@ -16,6 +16,7 @@
     class:bg-purple-500={color === "purple"}
     class:bg-sky-600={color === "sky"}
     class:bg-indigo-700={color === "dark"}
+    data-sveltekit-preload-data="off"
 >
     <svelte:component this={icon} class="inline-block" />
     {text}
