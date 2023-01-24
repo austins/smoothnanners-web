@@ -21,13 +21,13 @@
     <title>SmoothNanners</title>
 </svelte:head>
 
-<section class="mb-3">
+<section class="mb-4">
     <div class="min-[386px]:flex">
         <div class="mb-3 min-[386px]:mb-0 min-[386px]:mr-4">
             <img src="./assets/images/avatar.jpg" alt="SmoothNanners" class="rounded-md" />
         </div>
 
-        <div class="mb-4 text-[0.92em]">
+        <div class="text-[0.92em]">
             <p>Howdy! My name is Austin.</p>
 
             <p>I'm a gamer, musician, software developer, and photographer.</p>
