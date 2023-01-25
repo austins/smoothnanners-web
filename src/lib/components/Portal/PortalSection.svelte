@@ -13,9 +13,9 @@
     class:border-sky-600={color === "sky"}
     class:border-indigo-600={color === "dark"}
 >
-    <h2 class="mb-0 border-b-2 border-b-slate-600 py-2 px-3">
-        <svelte:component this={icon} class="inline-block" />
-        {headingText}
+    <h2 class="mb-0 flex items-center border-b-2 border-b-slate-600 py-2 px-3">
+        <svelte:component this={icon} class="mr-2" />
+        <span>{headingText}</span>
     </h2>
 
     <div class="py-3 px-3">

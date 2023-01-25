@@ -27,7 +27,7 @@
             <img src="./assets/images/avatar.jpg" alt="SmoothNanners" class="rounded-md" />
         </div>
 
-        <div class="text-[0.92em]">
+        <div class="text-[0.95em]">
             <p>Howdy! My name is Austin.</p>
 
             <p>I'm a gamer, musician, software developer, and photographer.</p>
@@ -48,7 +48,10 @@
             />
 
             <div>
-                <h3 class="italic"><PhStarFill class="inline-block" /> Featured</h3>
+                <h3 class="flex items-center">
+                    <PhStarFill class="mr-2" />
+                    <span class="italic">Featured</span>
+                </h3>
 
                 <YouTubeEmbed id="0KSH337DTmY" />
 
