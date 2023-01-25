@@ -4,7 +4,7 @@
     export let override: { status: number; message: string } | undefined = undefined;
 
     $: status = override ? override.status : $page.status;
-    $: message = override ? override.message : $page.error?.message;
+    $: message = override ? override.message : $page.error?.message ?? "An unexpected error has occurred.";
 </script>
 
 <svelte:head>
