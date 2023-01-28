@@ -20,7 +20,13 @@
                 <LogosYoutubeIcon />
             </div>
 
-            <img src={`https://i.ytimg.com/vi/${id}/mqdefault.jpg`} alt="YouTube Video" class="w-full" />
+            <img
+                src={`https://i.ytimg.com/vi/${id}/mqdefault.jpg`}
+                alt="YouTube Video"
+                width="332"
+                height="186.75"
+                class="w-full"
+            />
         </a>
     {:else}
         <iframe

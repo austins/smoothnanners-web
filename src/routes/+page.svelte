@@ -24,7 +24,13 @@
 <section class="mb-4">
     <div class="min-[386px]:flex">
         <div class="mb-3 min-[386px]:mb-0 min-[386px]:mr-4">
-            <img src="./assets/images/avatar.jpg" alt="SmoothNanners" class="rounded-md" />
+            <img
+                src="./assets/images/avatar.jpg"
+                alt="SmoothNanners"
+                width="171.35"
+                height="171.35"
+                class="rounded-md"
+            />
         </div>
 
         <div class="text-[0.95em]">
