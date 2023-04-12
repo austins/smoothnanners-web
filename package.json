@@ -17,7 +17,7 @@
     "devDependencies": {
         "@iconify-json/logos": "^1.1.24",
         "@iconify-json/ph": "^1.1.5",
-        "@sveltejs/adapter-static": "^2.0.1",
+        "@sveltejs/adapter-static": "^2.0.2",
         "@sveltejs/kit": "^1.15.4",
         "@types/html-minifier": "^4.0.2",
         "@typescript-eslint/eslint-plugin": "^5.58.0",
