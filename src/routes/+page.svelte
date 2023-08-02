@@ -36,7 +36,7 @@
         <div class="text-[0.95em]">
             <p>Howdy! My name is Austin.</p>
 
-            <p>I'm a gamer, musician, software developer, and photographer.</p>
+            <p>I'm a gamer, musician, software engineer, and photographer.</p>
 
             <p>You can find links to my content and websites below!</p>
         </div>
