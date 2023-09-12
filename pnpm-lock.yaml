@@ -1,9 +1,13 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 devDependencies:
   '@iconify-json/logos':
-    specifier: ^1.1.31
-    version: 1.1.31
+    specifier: ^1.1.36
+    version: 1.1.36
   '@iconify-json/ph':
     specifier: ^1.1.5
     version: 1.1.5
@@ -347,8 +351,8 @@ packages:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: true
 
-  /@iconify-json/logos@1.1.31:
-    resolution: {integrity: sha512-15u8OWZREIS02+ZRS6sXJ6AfhsK2+p5dw2XvMsMd0UJKGNvRmL1STPdHXtOhOe7lQ/YsmcvtpZXDJfcdBmcoPQ==}
+  /@iconify-json/logos@1.1.36:
+    resolution: {integrity: sha512-YdBiDwmomgedInuBS4YcQ+qpMkvixBhPqmwRLtnNp+qd9C/lKfM5Y4pNsSi6lRZSALiOqXxiZJZ1e9+L+BRrKQ==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true
