@@ -18,8 +18,8 @@ devDependencies:
     specifier: ^1.25.2
     version: 1.25.2(svelte@4.2.1)(vite@4.4.11)
   '@types/html-minifier':
-    specifier: ^4.0.3
-    version: 4.0.3
+    specifier: ^4.0.4
+    version: 4.0.4
   '@typescript-eslint/eslint-plugin':
     specifier: ^6.8.0
     version: 6.8.0(@typescript-eslint/parser@6.8.0)(eslint@8.51.0)(typescript@5.2.2)
@@ -539,8 +539,8 @@ packages:
     resolution: {integrity: sha512-VeiPZ9MMwXjO32/Xu7+OwflfmeoRwkE/qzndw42gGtgJwZopBnzy2gD//NN1+go1mADzkDcqf/KnFRSjTJ8xJA==}
     dev: true
 
-  /@types/html-minifier@4.0.3:
-    resolution: {integrity: sha512-e55KfPv+cXjd2AXwkuVfMw/hcJipNoS+JML+z3ijqzMHgc6F2iviWSEUx5tXQ6Yu5UtYtLH35ae2ftFsRJTmLA==}
+  /@types/html-minifier@4.0.4:
+    resolution: {integrity: sha512-kvzPbhN6CM+zFdOmLaGKF1DUnn9oYZteTiltHRFhsnj3vcnCZj1qVA0x1E7FTZvLT8e4WsHTSXk/0YV2NgOWOw==}
     dependencies:
       '@types/clean-css': 4.2.6
       '@types/relateurl': 0.2.29
