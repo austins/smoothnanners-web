@@ -16,7 +16,7 @@
     },
     "type": "module",
     "devDependencies": {
-        "@iconify-json/logos": "^1.1.38",
+        "@iconify-json/logos": "^1.1.39",
         "@iconify-json/ph": "^1.1.7",
         "@sveltejs/adapter-static": "^2.0.3",
         "@sveltejs/kit": "^1.27.6",
