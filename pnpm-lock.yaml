@@ -6,8 +6,8 @@ settings:
 
 devDependencies:
   '@iconify-json/logos':
-    specifier: ^1.1.39
-    version: 1.1.39
+    specifier: ^1.1.40
+    version: 1.1.40
   '@iconify-json/ph':
     specifier: ^1.1.8
     version: 1.1.8
@@ -369,8 +369,8 @@ packages:
     resolution: {integrity: sha512-dvuCeX5fC9dXgJn9t+X5atfmgQAzUOWqS1254Gh0m6i8wKd10ebXkfNKiRK+1GWi/yTvvLDHpoxLr0xxxeslWw==}
     dev: true
 
-  /@iconify-json/logos@1.1.39:
-    resolution: {integrity: sha512-ABYVTpbgNh9qDer1p2Jz3oDNHoRL/OlSS/jpo/OLI1buCmw/lI6mHk7D6nBB6w2AY7DQ60yyck/WN+zGD/fpLA==}
+  /@iconify-json/logos@1.1.40:
+    resolution: {integrity: sha512-F8XapUfZHp9Q53aFvhwFrwmM1NIXOtDV9G0WxIONSu3diiieObmiJQy5oNxla4LgPccyYYHyJQCo0Diys3sIUA==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true
