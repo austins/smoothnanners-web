@@ -17,7 +17,7 @@
     "type": "module",
     "devDependencies": {
         "@iconify-json/logos": "^1.1.41",
-        "@iconify-json/ph": "^1.1.8",
+        "@iconify-json/ph": "^1.1.9",
         "@sveltejs/adapter-static": "^2.0.3",
         "@sveltejs/kit": "^1.29.1",
         "@types/html-minifier": "^4.0.5",

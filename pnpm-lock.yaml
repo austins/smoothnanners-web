@@ -9,8 +9,8 @@ devDependencies:
     specifier: ^1.1.41
     version: 1.1.41
   '@iconify-json/ph':
-    specifier: ^1.1.8
-    version: 1.1.8
+    specifier: ^1.1.9
+    version: 1.1.9
   '@sveltejs/adapter-static':
     specifier: ^2.0.3
     version: 2.0.3(@sveltejs/kit@1.29.1)
@@ -382,8 +382,8 @@ packages:
       '@iconify/types': 2.0.0
     dev: true
 
-  /@iconify-json/ph@1.1.8:
-    resolution: {integrity: sha512-LtUWsiO/R2Gx4ZqHGJbJYG4XaAFkQ1+rHPQmmQ7NVTaqg7EZibB3ky1aXX12sJ2F+6z8QIpthsw3wRjReEnTig==}
+  /@iconify-json/ph@1.1.9:
+    resolution: {integrity: sha512-LcKe7rSp4zm1Rpafsv03DVdta65ePmPMH7IHLErD8nFLL2jNAtt/8CUAJWbaqYztE3V4wEg21az09Ur6yo9CXw==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true
