@@ -1,21 +1,15 @@
 {
     "folders": [{ "path": "." }],
     "settings": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": true,
-        "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-        "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-        "[svelte]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-        "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-        "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-        "[html]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-        "[css]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-        "[yaml]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-        "[markdown]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-        "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": "explicit"
+        },
         "eslint.validate": ["javascript", "typescript", "svelte"],
-        "yaml.schemas": { "https://json.schemastore.org/github-workflow.json": "/.github/workflows/*.yml" },
         "svelte.enable-ts-plugin": true,
-        "svelte.plugin.svelte.defaultScriptLanguage": "ts"
+        "svelte.plugin.svelte.defaultScriptLanguage": "ts",
+        "yaml.schemas": { "https://json.schemastore.org/github-workflow.json": "/.github/workflows/*.yml" }
     },
     "extensions": {
         "recommendations": [
