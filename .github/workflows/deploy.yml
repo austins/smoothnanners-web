@@ -46,6 +46,10 @@ jobs:
                       ${{ runner.os }}-pnpm-store-
             - name: Install dependencies
               run: pnpm i --frozen-lockfile
+            - name: Run svelte-check
+              run: pnpm run check
+            - name: Run lint
+              run: pnpm run lint
             - name: Run build
               run: pnpm run build
             - name: Upload GitHub Pages artifact

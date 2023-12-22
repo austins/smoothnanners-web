@@ -1,7 +1,7 @@
 <script lang="ts">
     export let text: string;
     export let href: string | null = null;
-    export let type: svelteHTML.IntrinsicElements["button"]["type"] = "button";
+    export let type: HTMLButtonElement["type"] = "button";
 
     $: isLink = !!href?.length;
 </script>

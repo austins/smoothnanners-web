@@ -4,41 +4,40 @@
     "scripts": {
         "preinstall": "npx only-allow pnpm -y",
         "dev": "vite dev",
-        "build": "svelte-kit sync && pnpm run lint && vite build",
+        "build": "vite build",
         "preview": "vite preview",
         "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
         "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-        "lint": "eslint .",
-        "format": "pnpm run lint --fix && prettier --write ."
+        "lint": "prettier --check . && eslint .",
+        "format": "prettier --write . && eslint . --fix"
     },
     "engines": {
-        "node": ">=18.13.0"
+        "node": ">=20.10.0"
     },
     "type": "module",
     "devDependencies": {
         "@iconify-json/logos": "^1.1.41",
         "@iconify-json/ph": "^1.1.9",
-        "@sveltejs/adapter-static": "^2.0.3",
-        "@sveltejs/kit": "^1.30.3",
+        "@sveltejs/adapter-static": "^3.0.1",
+        "@sveltejs/kit": "^2.0.6",
+        "@sveltejs/vite-plugin-svelte": "^3.0.1",
         "@types/html-minifier": "^4.0.5",
         "@typescript-eslint/eslint-plugin": "^6.15.0",
         "@typescript-eslint/parser": "^6.15.0",
         "autoprefixer": "^10.4.16",
         "eslint": "^8.56.0",
         "eslint-config-prettier": "^9.1.0",
-        "eslint-plugin-svelte3": "^4.0.0",
-        "eslint-plugin-unused-imports": "^3.0.0",
+        "eslint-plugin-svelte": "^2.35.1",
         "html-minifier": "^4.0.0",
         "postcss": "^8.4.32",
         "prettier": "^3.1.1",
         "prettier-plugin-svelte": "^3.1.2",
-        "prettier-plugin-tailwindcss": "^0.5.9",
         "svelte": "^4.2.8",
         "svelte-check": "^3.6.2",
         "tailwindcss": "^3.4.0",
         "tslib": "^2.6.2",
         "typescript": "^5.3.3",
         "unplugin-icons": "^0.18.1",
-        "vite": "^4.5.1"
+        "vite": "^5.0.10"
     }
 }
