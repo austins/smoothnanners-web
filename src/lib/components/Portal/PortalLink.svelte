@@ -1,10 +1,10 @@
 <script lang="ts">
-    import type { default as IconComponent } from "~icons/*";
-
-    export let icon: typeof IconComponent;
-    export let text: string;
-    export let href: string;
-    export let color: "rose" | "purple" | "sky" | "dark";
+    let { iconClass, text, href, color } = $props<{
+        iconClass: string;
+        text: string;
+        href: string;
+        color: "rose" | "purple" | "sky" | "dark";
+    }>();
 </script>
 
 <a
@@ -18,6 +18,6 @@
     class:bg-indigo-700={color === "dark"}
     data-sveltekit-preload-data="off"
 >
-    <svelte:component this={icon} class="mr-2" />
+    <span class="{iconClass} mr-2" />
     <span>{text}</span>
 </a>

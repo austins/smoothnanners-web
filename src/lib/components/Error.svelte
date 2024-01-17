@@ -1,10 +1,12 @@
 <script lang="ts">
-    import { page } from "$app/stores";
+    import { getStores } from "$app/stores";
 
-    export let override: { status: number; message: string } | undefined = undefined;
+    const { page } = getStores();
 
-    $: status = override ? override.status : $page.status;
-    $: message = override ? override.message : $page.error?.message ?? "An unexpected error has occurred.";
+    let { override } = $props<{ override?: { status: number; message: string } }>();
+
+    const status = override ? override.status : $page.status;
+    const message = override ? override.message : $page.error?.message ?? "An unexpected error has occurred.";
 </script>
 
 <svelte:head>

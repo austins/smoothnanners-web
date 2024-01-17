@@ -1,9 +1,7 @@
 <script lang="ts">
-    import LogosYoutubeIcon from "~icons/logos/youtube-icon";
+    let { id } = $props<{ id: string }>();
 
-    export let id: string;
-
-    let showEmbed = false;
+    let showEmbed = $state(false);
 </script>
 
 <div class="mb-3 last:mb-0">
@@ -12,12 +10,15 @@
             href="https://youtu.be/{id}"
             target="_blank"
             rel="noreferrer"
-            on:click|preventDefault={() => (showEmbed = true)}
+            onclick={(e) => {
+                e.preventDefault();
+                showEmbed = true;
+            }}
             class="relative block"
             data-sveltekit-preload-data="off"
         >
             <div class="absolute flex h-full w-full items-center justify-center text-6xl hover:brightness-[0.85]">
-                <LogosYoutubeIcon />
+                <span class="icon-[logos--youtube-icon]" />
             </div>
 
             <img

@@ -1,9 +1,15 @@
 <script lang="ts">
-    export let text: string;
-    export let href: string | null = null;
-    export let type: HTMLButtonElement["type"] = "button";
+    let {
+        text,
+        href,
+        type = "button"
+    } = $props<{
+        text: string;
+        href?: string;
+        type?: HTMLButtonElement["type"];
+    }>();
 
-    $: isLink = !!href?.length;
+    const isLink = !!href?.length;
 </script>
 
 <svelte:element

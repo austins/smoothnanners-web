@@ -3,10 +3,9 @@
     "settings": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": true,
-        "editor.codeActionsOnSave": {
-            "source.fixAll.eslint": "explicit"
-        },
+        "editor.codeActionsOnSave": { "source.fixAll.eslint": "explicit" },
         "eslint.validate": ["javascript", "typescript", "svelte"],
+        "[svelte]": { "editor.defaultFormatter": "svelte.svelte-vscode" },
         "svelte.enable-ts-plugin": true,
         "svelte.plugin.svelte.defaultScriptLanguage": "ts",
         "yaml.schemas": { "https://json.schemastore.org/github-workflow.json": "/.github/workflows/*.yml" }

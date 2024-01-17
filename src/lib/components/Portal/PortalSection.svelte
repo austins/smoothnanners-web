@@ -1,9 +1,12 @@
 <script lang="ts">
-    import type { default as IconComponent } from "~icons/*";
+    import type { Snippet } from "svelte";
 
-    export let icon: typeof IconComponent;
-    export let headingText: string;
-    export let color: "fuchsia" | "purple" | "sky" | "dark";
+    let { iconClass, headingText, color, children } = $props<{
+        iconClass: string;
+        headingText: string;
+        color: "fuchsia" | "purple" | "sky" | "dark";
+        children: Snippet;
+    }>();
 </script>
 
 <section
@@ -14,11 +17,11 @@
     class:border-indigo-500={color === "dark"}
 >
     <h2 class="mb-0 flex items-center border-b-2 border-b-slate-600 py-2 px-3">
-        <svelte:component this={icon} class="mr-2" />
+        <span class="{iconClass} mr-2" />
         <span>{headingText}</span>
     </h2>
 
     <div class="py-3 px-3">
-        <slot />
+        {@render children()}
     </div>
 </section>

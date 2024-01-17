@@ -1,9 +1,10 @@
-const defaultTheme = require("tailwindcss/defaultTheme");
+import { type Config } from "tailwindcss";
+import * as defaultTheme from "tailwindcss/defaultTheme";
+import { addDynamicIconSelectors } from "@iconify/tailwind";
 
 const sans = ["Droid Sans", ...defaultTheme.fontFamily.sans];
 
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+const config: Config = {
     content: ["./src/**/*.{html,svelte}"],
     theme: {
         extend: {
@@ -14,5 +15,7 @@ module.exports = {
         },
         container: { center: true }
     },
-    plugins: []
+    plugins: [addDynamicIconSelectors()]
 };
+
+export default config;

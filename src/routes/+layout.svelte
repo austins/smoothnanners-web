@@ -1,5 +1,8 @@
 <script lang="ts">
+    import type { Snippet } from "svelte";
     import "../app.css";
+
+    let { children } = $props<{ children: Snippet }>();
 </script>
 
 <svelte:head>
@@ -13,6 +16,6 @@
     <main class="container max-w-3xl">
         <h1>SmoothNanners</h1>
 
-        <slot />
+        {@render children()}
     </main>
 </div>
