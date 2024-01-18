@@ -8,12 +8,17 @@ const config: Config = {
     content: ["./src/**/*.{html,svelte}"],
     theme: {
         extend: {
+            container: {
+                center: true,
+                screens: {
+                    sm: "48rem"
+                }
+            },
             fontFamily: {
                 sans,
                 heading: ["Kalam", ...sans]
             }
-        },
-        container: { center: true }
+        }
     },
     plugins: [addDynamicIconSelectors()]
 };
