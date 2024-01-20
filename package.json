@@ -17,7 +17,7 @@
         "@iconify-json/ph": "^1.1.10",
         "@iconify/tailwind": "^0.1.4",
         "@sveltejs/adapter-static": "^3.0.1",
-        "@sveltejs/kit": "^2.4.0",
+        "@sveltejs/kit": "^2.4.1",
         "@sveltejs/vite-plugin-svelte": "^3.0.1",
         "@types/html-minifier": "^4.0.5",
         "@typescript-eslint/eslint-plugin": "^6.19.0",
