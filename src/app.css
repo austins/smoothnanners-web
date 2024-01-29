@@ -18,6 +18,10 @@
     p {
         @apply pb-3 last:pb-0;
     }
+
+    [class^="icon-"] {
+        @apply align-middle;
+    }
 }
 
 @layer components {
