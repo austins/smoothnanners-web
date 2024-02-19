@@ -24,12 +24,12 @@
         "configurations": [
             {
                 "name": "dev",
+                "type": "node",
                 "request": "launch",
                 "runtimeArgs": ["run", "dev"],
                 "runtimeExecutable": "npm",
-                "cwd": "${workspaceRoot}",
-                "skipFiles": ["<node_internals>/**"],
-                "type": "node"
+                "cwd": "${workspaceFolder}",
+                "skipFiles": ["<node_internals>/**"]
             }
         ]
     }

@@ -12,7 +12,7 @@
     class="flex min-h-screen items-center text-xl leading-snug text-white drop-shadow-[0_1px_4px_rgba(255,255,255,0.15)] sm:text-2xl"
 >
     <main class="container">
-        <h1>SmoothNanners</h1>
+        <h1 class="font-handwritten">SmoothNanners</h1>
 
         {@render children()}
     </main>
