@@ -42,8 +42,8 @@ devDependencies:
     specifier: ^9.1.0
     version: 9.1.0(eslint@8.57.0)
   eslint-plugin-svelte:
-    specifier: ^2.36.0-next.7
-    version: 2.36.0-next.7(eslint@8.57.0)(svelte@5.0.0-next.69)
+    specifier: ^2.36.0-next.8
+    version: 2.36.0-next.8(eslint@8.57.0)(svelte@5.0.0-next.69)
   html-minifier:
     specifier: ^4.0.0
     version: 4.0.0
@@ -1160,8 +1160,8 @@ packages:
       eslint: 8.57.0
     dev: true
 
-  /eslint-plugin-svelte@2.36.0-next.7(eslint@8.57.0)(svelte@5.0.0-next.69):
-    resolution: {integrity: sha512-uKOXiuL0fy1vnnUgBRsMKZTNaHKG6IHo3LvY+RiDM7niAOWPF1q5fqgV36aUylWv7LSLuorp1tdh9eq3fDmSlA==}
+  /eslint-plugin-svelte@2.36.0-next.8(eslint@8.57.0)(svelte@5.0.0-next.69):
+    resolution: {integrity: sha512-YbnL5XoGrOAh7dAmSFYn0vt7G4TL0kVOlIoR1RZl20d1DuPPcHQ4Afl8OQSdhRm/HYuYzGsLb7H+i1z1OzPO+A==}
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^7.0.0 || ^8.0.0-0 || ^9.0.0-0
