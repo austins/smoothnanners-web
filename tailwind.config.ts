@@ -4,13 +4,11 @@ import { addDynamicIconSelectors } from "@iconify/tailwind";
 const config: Config = {
     content: ["./src/**/*.{html,svelte}"],
     theme: {
+        container: {
+            center: true,
+            screens: { sm: "48rem" }
+        },
         extend: {
-            container: {
-                center: true,
-                screens: {
-                    sm: "48rem"
-                }
-            },
             fontFamily: {
                 roundsans: [
                     "ui-rounded",
