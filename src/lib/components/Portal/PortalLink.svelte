@@ -3,7 +3,7 @@
         iconClass,
         text,
         href,
-        color,
+        color
     }: {
         iconClass: string;
         text: string;

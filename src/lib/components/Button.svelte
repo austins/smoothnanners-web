@@ -2,7 +2,7 @@
     let {
         text,
         href,
-        type = "button",
+        type = "button"
     }: {
         text: string;
         href?: string;
