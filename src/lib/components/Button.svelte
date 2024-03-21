@@ -2,12 +2,12 @@
     let {
         text,
         href,
-        type = "button"
-    } = $props<{
+        type = "button",
+    }: {
         text: string;
         href?: string;
         type?: HTMLButtonElement["type"];
-    }>();
+    } = $props();
 
     const isLink = !!href?.length;
 </script>

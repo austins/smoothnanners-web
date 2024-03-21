@@ -1,12 +1,12 @@
 <script lang="ts">
     import type { Snippet } from "svelte";
 
-    let { iconClass, headingText, color, children } = $props<{
+    let { iconClass, headingText, color, children }: {
         iconClass: string;
         headingText: string;
         color: "fuchsia" | "purple" | "sky" | "dark";
         children: Snippet;
-    }>();
+    } = $props();
 </script>
 
 <section

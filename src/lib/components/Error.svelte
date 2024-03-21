@@ -3,7 +3,7 @@
 
     const { page } = getStores();
 
-    let { override } = $props<{ override?: { status: number; message: string } }>();
+    let { override }: { override?: { status: number; message: string } } = $props();
 
     const status = override ? override.status : $page.status;
     const message = override ? override.message : $page.error?.message ?? "An unexpected error has occurred.";

@@ -1,10 +1,15 @@
 <script lang="ts">
-    let { iconClass, text, href, color } = $props<{
+    let {
+        iconClass,
+        text,
+        href,
+        color,
+    }: {
         iconClass: string;
         text: string;
         href: string;
         color: "rose" | "purple" | "sky" | "dark";
-    }>();
+    } = $props();
 </script>
 
 <a

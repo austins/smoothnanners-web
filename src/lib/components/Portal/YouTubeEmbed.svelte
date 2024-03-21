@@ -1,5 +1,5 @@
 <script lang="ts">
-    let { id } = $props<{ id: string }>();
+    let { id }: { id: string } = $props();
 
     let showEmbed = $state(false);
 </script>
