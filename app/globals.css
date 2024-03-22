@@ -23,9 +23,3 @@
         @apply align-middle;
     }
 }
-
-@layer components {
-    .container {
-        @apply p-4;
-    }
-}

@@ -1,3 +1,3 @@
 The [SmoothNanners](https://smoothnanners.com) website.
 
-Powered by SvelteKit.
+Powered by Next.js.

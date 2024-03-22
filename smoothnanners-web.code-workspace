@@ -1,33 +1,47 @@
 {
-    "folders": [{ "path": "." }],
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
     "settings": {
         "editor.formatOnSave": true,
-        "editor.codeActionsOnSave": { "source.fixAll.eslint": "explicit" },
-        "eslint.validate": ["javascript", "typescript", "svelte"],
-        "[svelte]": { "editor.defaultFormatter": "svelte.svelte-vscode" },
-        "svelte.enable-ts-plugin": true,
-        "svelte.plugin.svelte.defaultScriptLanguage": "ts",
-        "yaml.schemas": { "https://json.schemastore.org/github-workflow.json": "/.github/workflows/*.yml" }
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": "explicit"
+        },
+        "eslint.validate": [
+            "javascript",
+            "typescript",
+            "javascriptreact",
+            "typescriptreact"
+        ],
+        "yaml.schemas": {
+            "https://json.schemastore.org/github-workflow.json": "/.github/workflows/*.yml"
+        }
     },
     "extensions": {
         "recommendations": [
             "dbaeumer.vscode-eslint",
-            "redhat.vscode-yaml",
             "csstools.postcss",
             "bradlc.vscode-tailwindcss",
-            "svelte.svelte-vscode"
+            "redhat.vscode-yaml"
         ]
     },
     "launch": {
         "configurations": [
             {
                 "name": "dev",
-                "type": "node",
                 "request": "launch",
-                "runtimeArgs": ["run", "dev"],
-                "runtimeExecutable": "npm",
+                "type": "node",
+                "runtimeExecutable": "pnpm",
+                "runtimeArgs": [
+                    "run",
+                    "dev"
+                ],
                 "cwd": "${workspaceFolder}",
-                "skipFiles": ["<node_internals>/**"]
+                "skipFiles": [
+                    "<node_internals>/**"
+                ]
             }
         ]
     }

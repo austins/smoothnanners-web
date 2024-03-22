@@ -46,8 +46,6 @@ jobs:
                       ${{ runner.os }}-pnpm-store-
             - name: Install dependencies
               run: pnpm i --frozen-lockfile
-            - name: Run svelte-check
-              run: pnpm run check
             - name: Run lint
               run: pnpm run lint
             - name: Run build
@@ -55,7 +53,7 @@ jobs:
             - name: Upload GitHub Pages artifact
               uses: actions/upload-pages-artifact@v1
               with:
-                  path: ./build
+                  path: ./out
     deploy:
         needs: build
         permissions:
