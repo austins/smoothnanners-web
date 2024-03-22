@@ -25,7 +25,8 @@
             "@/*": [
                 "./*"
             ]
-        }
+        },
+        "verbatimModuleSyntax": true
     },
     "include": [
         "next-env.d.ts",
