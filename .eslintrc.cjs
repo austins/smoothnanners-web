@@ -12,15 +12,10 @@ const stylisticRules = require("@stylistic/eslint-plugin").configs.customize({
 /** @type { import("eslint").Linter.Config } */
 module.exports = {
     root: true,
-    extends: ["eslint:recommended", "plugin:@typescript-eslint/recommended", "plugin:svelte/recommended"],
-    plugins: ["@typescript-eslint", "@stylistic"],
+    extends: ["eslint:recommended", "plugin:@typescript-eslint/recommended", "next/core-web-vitals"],
     parser: "@typescript-eslint/parser",
-    parserOptions: { sourceType: "module", ecmaVersion: 2020, extraFileExtensions: [".svelte"] },
-    env: { browser: true, es2017: true, node: true },
-    ignorePatterns: ["*.cjs"],
-    overrides: [
-        { files: ["*.svelte"], parser: "svelte-eslint-parser", parserOptions: { parser: "@typescript-eslint/parser" } }
-    ],
+    plugins: ["@typescript-eslint", "tailwindcss", "@stylistic"],
+    settings: { tailwindcss: { callees: ["twJoin", "twMerge"] } },
     rules: {
         eqeqeq: "error",
         curly: ["error", "all"],
@@ -34,8 +29,16 @@ module.exports = {
             { vars: "all", varsIgnorePattern: "^_", args: "after-used", argsIgnorePattern: "^_" }
         ],
         "@typescript-eslint/no-explicit-any": "off",
+        "tailwindcss/classnames-order": "error",
+        "tailwindcss/enforces-negative-arbitrary-values": "error",
+        "tailwindcss/enforces-shorthand": "error",
+        "tailwindcss/no-contradicting-classname": "error",
+        "tailwindcss/no-custom-classname": "error",
+        "tailwindcss/no-unnecessary-arbitrary-value": "error",
         ...stylisticRules,
         "@stylistic/jsx-one-expression-per-line": "off",
-        "@stylistic/quote-props": ["error", "as-needed"]
+        "@stylistic/quote-props": ["error", "as-needed"],
+        "@stylistic/indent": ["error", 4, { ignoredNodes: ["ConditionalExpression"] }],
+        "@stylistic/function-paren-newline": ["error", "multiline-arguments"]
     }
 };

@@ -2,10 +2,11 @@ import { type Config } from "tailwindcss";
 import { addDynamicIconSelectors } from "@iconify/tailwind";
 
 const config: Config = {
-    content: ["./src/**/*.{html,svelte}"],
+    content: ["./{app,components}/**/*.{jsx,tsx}"],
     theme: {
         container: {
             center: true,
+            padding: "1rem",
             screens: { sm: "48rem" }
         },
         extend: {
