@@ -2,12 +2,12 @@ import { type PropsWithChildren } from "react";
 import { twJoin } from "tailwind-merge";
 
 export function PortalLink({
-    iconClass,
+    iconClassName,
     href,
     color,
     children
 }: PropsWithChildren<{
-    iconClass: string;
+    iconClassName: string;
     href: string;
     color: "rose" | "purple" | "sky" | "dark";
 }>) {
@@ -24,7 +24,7 @@ export function PortalLink({
                 color === "dark" && "bg-indigo-700"
             )}
         >
-            <span className={twJoin(iconClass, "mr-2")} />
+            <span className={twJoin(iconClassName, "mr-2")} />
             <span>{children}</span>
         </a>
     );

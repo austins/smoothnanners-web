@@ -1,8 +1,13 @@
 import { type PropsWithChildren } from "react";
 import { twJoin } from "tailwind-merge";
 
-export function PortalSection({ iconClass, headingText, color, children }: PropsWithChildren<{
-    iconClass: string;
+export function PortalSection({
+    iconClassName,
+    headingText,
+    color,
+    children
+}: PropsWithChildren<{
+    iconClassName: string;
     headingText: string;
     color: "fuchsia" | "purple" | "sky" | "dark";
 }>) {
@@ -17,7 +22,7 @@ export function PortalSection({ iconClass, headingText, color, children }: Props
             )}
         >
             <h2 className="mb-0 flex items-center border-b-2 border-b-slate-600 px-3 py-2">
-                <span className={twJoin(iconClass, "mr-2")} />
+                <span className={twJoin(iconClassName, "mr-2")} />
                 <span>{headingText}</span>
             </h2>
 

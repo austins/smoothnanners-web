@@ -32,9 +32,9 @@ export default function Home() {
 
             <div className="sm:grid sm:grid-cols-2 sm:gap-4">
                 <div className="mb-4 sm:mb-0">
-                    <PortalSection iconClass="icon-[ph--music-notes-fill]" headingText="Music" color="fuchsia">
+                    <PortalSection iconClassName="icon-[ph--music-notes-fill]" headingText="Music" color="fuchsia">
                         <PortalLink
-                            iconClass="icon-[ph--youtube-logo-fill]"
+                            iconClassName="icon-[ph--youtube-logo-fill]"
                             href="https://www.youtube.com/channel/UCPjcGsO8o_FKPGHLQ5d1hbg"
                             color="rose"
                         >
@@ -55,9 +55,9 @@ export default function Home() {
                 </div>
 
                 <div>
-                    <PortalSection iconClass="icon-[ph--game-controller-fill]" headingText="Gaming" color="purple">
+                    <PortalSection iconClassName="icon-[ph--game-controller-fill]" headingText="Gaming" color="purple">
                         <PortalLink
-                            iconClass="icon-[ph--youtube-logo-fill]"
+                            iconClassName="icon-[ph--youtube-logo-fill]"
                             href="https://www.youtube.com/channel/UCQB1XVER5WPtxRESxHMG1Qw"
                             color="rose"
                         >
@@ -65,7 +65,7 @@ export default function Home() {
                         </PortalLink>
 
                         <PortalLink
-                            iconClass="icon-[ph--twitch-logo-bold]"
+                            iconClassName="icon-[ph--twitch-logo-bold]"
                             href="https://www.twitch.tv/smoothnanners"
                             color="purple"
                         >
@@ -73,21 +73,21 @@ export default function Home() {
                         </PortalLink>
 
                         <PortalLink
-                            iconClass="icon-[ph--discord-logo-fill]"
+                            iconClassName="icon-[ph--discord-logo-fill]"
                             href="https://discord.gg/P7rhAhA"
                             color="dark"
                         >
                             Discord
                         </PortalLink>
 
-                        <PortalLink iconClass="icon-[ph--globe]" href="https://gamebyline.com/" color="dark">
+                        <PortalLink iconClassName="icon-[ph--globe]" href="https://gamebyline.com/" color="dark">
                             Game Byline
                         </PortalLink>
                     </PortalSection>
 
-                    <PortalSection iconClass="icon-[ph--code]" headingText="Programming" color="sky">
+                    <PortalSection iconClassName="icon-[ph--code]" headingText="Programming" color="sky">
                         <PortalLink
-                            iconClass="icon-[ph--youtube-logo-fill]"
+                            iconClassName="icon-[ph--youtube-logo-fill]"
                             href="https://www.youtube.com/channel/UCJjowuNoLywGC7ujP74zFJg"
                             color="rose"
                         >
@@ -95,21 +95,21 @@ export default function Home() {
                         </PortalLink>
 
                         <PortalLink
-                            iconClass="icon-[ph--github-logo]"
+                            iconClassName="icon-[ph--github-logo]"
                             href="https://github.com/austins"
                             color="dark"
                         >
                             GitHub
                         </PortalLink>
 
-                        <PortalLink iconClass="icon-[ph--globe]" href="https://austinsdev.com/" color="dark">
+                        <PortalLink iconClassName="icon-[ph--globe]" href="https://austinsdev.com/" color="dark">
                             Austin&apos;s Dev
                         </PortalLink>
                     </PortalSection>
 
-                    <PortalSection iconClass="icon-[ph--user]" headingText="Social" color="dark">
+                    <PortalSection iconClassName="icon-[ph--user]" headingText="Social" color="dark">
                         <PortalLink
-                            iconClass="icon-[ph--twitter-logo-fill]"
+                            iconClassName="icon-[ph--twitter-logo-fill]"
                             href="https://twitter.com/smoothnanners"
                             color="sky"
                         >
@@ -117,14 +117,14 @@ export default function Home() {
                         </PortalLink>
 
                         <PortalLink
-                            iconClass="icon-[ph--coins]"
+                            iconClassName="icon-[ph--coins]"
                             href="https://streamelements.com/smoothnanners/tip"
                             color="dark"
                         >
                             Donate / Tip
                         </PortalLink>
 
-                        <PortalLink iconClass="icon-[ph--at]" href="mailto:austin@austinsdev.com" color="dark">
+                        <PortalLink iconClassName="icon-[ph--at]" href="mailto:austin@austinsdev.com" color="dark">
                             Email
                         </PortalLink>
                     </PortalSection>
