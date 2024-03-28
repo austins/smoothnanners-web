@@ -3,20 +3,13 @@ name: Build
 on:
     pull_request:
         branches: [master]
-        paths-ignore:
-            - ".github/dependabot.yml"
-            - "README.md"
-            - "LICENSE"
 
 jobs:
-    analyze:
-        uses: ./.github/workflows/analyze.yml
     build:
-        needs: analyze
         runs-on: ubuntu-latest
         steps:
             - name: Checkout
-              uses: actions/checkout@v3
+              uses: actions/checkout@v4
             - name: Setup Node
               uses: actions/setup-node@v3
               with:
