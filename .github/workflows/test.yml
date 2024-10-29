@@ -1,0 +1,26 @@
+﻿name: Test
+
+on:
+    workflow_call:
+
+jobs:
+    test:
+        runs-on: ubuntu-latest
+        steps:
+            -   name: Checkout
+                uses: actions/checkout@v4
+            -   uses: pnpm/action-setup@v4
+                name: Install pnpm
+                with:
+                    version: latest
+                    run_install: false
+            -   name: Install Node
+                uses: actions/setup-node@v4
+                with:
+                    node-version: 22.x
+                    cache: 'pnpm'
+            -   name: Install dependencies
+                run: pnpm install --frozen-lockfile
+            # There are no tests, so we run build, which runs lint too, and see if it exits with errors.
+            -   name: Run build
+                run: pnpm run build
