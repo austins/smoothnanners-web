@@ -1,6 +1,7 @@
 ﻿"use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 export function YouTubeEmbeds(props: { ids: string[] }) {
     const [currentId, setCurrentId] = useState<string | null>(null);
@@ -15,11 +16,11 @@ export function YouTubeEmbeds(props: { ids: string[] }) {
                                     <picture>
                                         <source type="image/webp" srcSet={`https://i.ytimg.com/vi_webp/${id}/mqdefault.webp`} />
 
-                                        <img
+                                        <Image
                                             src={`https://i.ytimg.com/vi/${id}/mqdefault.jpg`}
                                             alt="YouTube Video"
-                                            width="332"
-                                            height="186.75"
+                                            width={332}
+                                            height={186.75}
                                             className="w-full"
                                         />
                                     </picture>
