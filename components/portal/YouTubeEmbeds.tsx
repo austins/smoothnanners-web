@@ -28,7 +28,7 @@ export function YouTubeEmbeds(props: { ids: string[] }) {
                                         href={`https://www.youtube.com/watch?v=${id}`}
                                         target="_blank"
                                         rel="noreferrer"
-                                        className="absolute top-0 flex size-full items-center justify-center bg-black bg-opacity-0 text-6xl hover:bg-opacity-15 hover:brightness-[0.85]"
+                                        className="absolute top-0 flex size-full items-center justify-center text-6xl hover:brightness-[0.85]"
                                         aria-label="YouTube Video"
                                         onClick={(e) => {
                                             e.preventDefault();
