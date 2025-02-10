@@ -1,0 +1,37 @@
+{
+    "name": "smoothnanners-web",
+    "private": true,
+    "scripts": {
+        "dev": "next dev --turbopack",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "fix": "next lint --fix"
+    },
+    "packageManager": "pnpm@10.2.1+sha512.398035c7bd696d0ba0b10a688ed558285329d27ea994804a52bad9167d8e3a72bcb993f9699585d3ca25779ac64949ef422757a6c31102c12ab932e5cbe5cc92",
+    "dependencies": {
+        "next": "^15.1.6",
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0",
+        "react-icons": "^5.4.0",
+        "tailwind-merge": "^3.0.1"
+    },
+    "devDependencies": {
+        "@eslint/eslintrc": "^3.2.0",
+        "@eslint/js": "^9.20.0",
+        "@tailwindcss/postcss": "^4.0.5",
+        "@types/node": "^22.13.1",
+        "@types/react": "^19.0.8",
+        "@types/react-dom": "^19.0.3",
+        "babel-plugin-react-compiler": "19.0.0-beta-714736e-20250131",
+        "eslint": "^9.20.0",
+        "eslint-config-next": "^15.1.6",
+        "eslint-config-prettier": "^10.0.1",
+        "eslint-plugin-prettier": "^5.2.3",
+        "postcss": "^8.5.1",
+        "prettier-plugin-tailwindcss": "^0.6.11",
+        "tailwindcss": "^4.0.5",
+        "typescript": "^5.7.3",
+        "typescript-eslint": "^8.23.0"
+    }
+}
