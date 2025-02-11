@@ -1,10 +1,13 @@
 import type { NextConfig } from "next";
+import initBundleAnalyzer from "@next/bundle-analyzer";
 
-const nextConfig: NextConfig = {
+const withBundleAnalyzer = initBundleAnalyzer({ enabled: process.env.ANALYZE === "true" });
+
+const config: NextConfig = {
     eslint: { dirs: ["."] },
     experimental: { reactCompiler: true },
     output: "export",
     images: { unoptimized: true }
 };
 
-export default nextConfig;
+export default withBundleAnalyzer(config);

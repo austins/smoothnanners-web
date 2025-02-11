@@ -6,7 +6,8 @@
         "build": "next build",
         "start": "next start",
         "lint": "tsc --noEmit && next lint",
-        "fix": "pnpm run lint --fix"
+        "fix": "pnpm run lint --fix",
+        "analyze": "cross-env ANALYZE=true pnpm run build"
     },
     "packageManager": "pnpm@10.2.1+sha512.398035c7bd696d0ba0b10a688ed558285329d27ea994804a52bad9167d8e3a72bcb993f9699585d3ca25779ac64949ef422757a6c31102c12ab932e5cbe5cc92",
     "dependencies": {
@@ -20,11 +21,13 @@
     "devDependencies": {
         "@eslint/eslintrc": "^3.2.0",
         "@eslint/js": "^9.20.0",
+        "@next/bundle-analyzer": "^15.1.7",
         "@tailwindcss/postcss": "^4.0.6",
         "@types/node": "^22.13.1",
         "@types/react": "^19.0.8",
         "@types/react-dom": "^19.0.3",
         "babel-plugin-react-compiler": "19.0.0-beta-714736e-20250131",
+        "cross-env": "^7.0.3",
         "eslint": "^9.20.1",
         "eslint-config-next": "^15.1.7",
         "eslint-config-prettier": "^10.0.1",
