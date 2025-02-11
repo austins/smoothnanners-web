@@ -15,7 +15,11 @@ export default function RootNotFound() {
             <div className="mt-4">
                 <Link
                     href="/"
-                    className="rounded-md border border-gray-600 bg-indigo-600 px-3 py-2 hover:bg-indigo-700 motion-safe:transition-colors motion-safe:duration-150 motion-safe:ease-in-out"
+                    className={`
+                      rounded-md border border-gray-600 bg-indigo-600 px-3 py-2
+                      hover:bg-indigo-700
+                      motion-safe:transition-colors motion-safe:duration-150 motion-safe:ease-in-out
+                    `}
                 >
                     Back to Home
                 </Link>

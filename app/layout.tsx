@@ -21,7 +21,10 @@ export default function RootLayout(props: PropsWithChildren) {
             <body
                 className={twJoin(
                     playpenSansFont.variable,
-                    "font-rounded-sans flex min-h-screen items-center bg-blue-950 bg-gradient-to-b from-blue-950 to-blue-800 text-2xl text-white drop-shadow"
+                    `
+                      font-rounded-sans flex min-h-screen items-center bg-blue-950 bg-gradient-to-b from-blue-950
+                      to-blue-800 text-2xl text-white drop-shadow
+                    `
                 )}
             >
                 <div className="container py-4">

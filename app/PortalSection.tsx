@@ -12,7 +12,7 @@ export function PortalSection(
     return (
         <section
             className={twJoin(
-                "border-3 rounded-md",
+                "rounded-md border-3",
                 props.variant === "indigo" && "border-indigo-500",
                 props.variant === "pink" && "border-pink-500",
                 props.variant === "cyan" && "border-cyan-400",

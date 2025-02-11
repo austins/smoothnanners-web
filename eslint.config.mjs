@@ -3,6 +3,7 @@ import { dirname } from "node:path";
 import { FlatCompat } from "@eslint/eslintrc";
 import ts from "typescript-eslint";
 import eslint from "@eslint/js";
+import readableTailwind from "eslint-plugin-readable-tailwind";
 import prettier from "eslint-plugin-prettier/recommended";
 
 const compat = new FlatCompat({ baseDirectory: dirname(fileURLToPath(import.meta.url)) });
@@ -11,21 +12,16 @@ const config = ts.config(
     { ignores: [".next/", "out/", ".idea/"] },
     eslint.configs.recommended,
     ...compat.extends("next/core-web-vitals", "next/typescript"),
-    prettier,
     {
+        files: ["**/*.{jsx,tsx}"],
+        plugins: { "readable-tailwind": readableTailwind },
         rules: {
-            "prettier/prettier": [
-                "error",
-                {
-                    arrowParens: "avoid",
-                    trailingComma: "none",
-                    plugins: ["prettier-plugin-tailwindcss"],
-                    tailwindStylesheet: "./src/app/app.css",
-                    tailwindFunctions: ["twJoin", "twMerge"]
-                }
-            ]
+            ...readableTailwind.configs.error.rules,
+            "readable-tailwind/multiline": ["error", { printWidth: 120, group: "newLine", preferSingleLine: true }]
         }
-    }
+    },
+    prettier,
+    { rules: { "prettier/prettier": ["error", { arrowParens: "avoid", trailingComma: "none" }] } }
 );
 
 export default config;
