@@ -20,7 +20,7 @@ export function YouTubeEmbeds(props: { videoIds: Set<string> }) {
                         <YouTube
                             videoId={id}
                             title="YouTube Video"
-                            iframeClassName="aspect-video h-auto w-full"
+                            iframeClassName="aspect-video h-auto w-full rounded-md"
                             opts={{ playerVars: { autoplay: 1 } }}
                             onPlay={() => {
                                 for (const [visibleId, youTubeElement] of youTubeRefs.current) {
@@ -56,7 +56,7 @@ export function YouTubeEmbeds(props: { videoIds: Set<string> }) {
                                 className="absolute inset-0 flex items-center justify-center transition-all duration-150 ease-in-out hover:brightness-75"
                                 onClick={e => {
                                     e.preventDefault();
-                                    setPlayedIds(state => new Set([...state, id]));
+                                    setPlayedIds(state => new Set(state).add(id));
                                 }}
                             >
                                 <svg
