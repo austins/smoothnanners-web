@@ -53,7 +53,7 @@ export function YouTubeEmbeds(props: { videoIds: Set<string> }) {
                                 aria-label="YouTube Video"
                                 target="_blank"
                                 rel="noreferrer"
-                                className="absolute inset-0 flex items-center justify-center transition-all duration-150 ease-in-out hover:brightness-75"
+                                className="absolute inset-0 flex items-center justify-center hover:brightness-75 motion-safe:transition-all motion-safe:duration-150 motion-safe:ease-in-out"
                                 onClick={e => {
                                     e.preventDefault();
                                     setPlayedIds(state => new Set(state).add(id));
