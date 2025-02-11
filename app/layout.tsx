@@ -10,9 +10,9 @@ export const metadata: Metadata = {
 };
 
 const playpenSansFont = Playpen_Sans({
+    display: "swap",
     subsets: ["latin"],
-    variable: "--font-playpen-sans",
-    display: "swap"
+    variable: "--font-playpen-sans"
 });
 
 export default function RootLayout(props: PropsWithChildren) {
