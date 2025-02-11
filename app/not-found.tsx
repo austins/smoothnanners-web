@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 export default function RootNotFound() {
     return (
         <>
-            <h2 className="text-3xl font-bold">Error: 404</h2>
+            <h2 className="text-4xl font-bold">Error: 404</h2>
 
             <p>Page not found.</p>
 

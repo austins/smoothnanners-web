@@ -1,4 +1,3 @@
-// @ts-check
 import { fileURLToPath } from "node:url";
 import { dirname } from "node:path";
 import { FlatCompat } from "@eslint/eslintrc";

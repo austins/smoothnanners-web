@@ -40,7 +40,7 @@ export default function Home() {
                             href="https://www.youtube.com/channel/UCPjcGsO8o_FKPGHLQ5d1hbg"
                         />
 
-                        <YouTubeEmbeds videoIds={["lnWtTXtXc0A", "XjIJoM1AZyQ"]} />
+                        <YouTubeEmbeds videoIds={new Set(["lnWtTXtXc0A", "XjIJoM1AZyQ"])} />
                     </PortalSection>
                 </div>
 
