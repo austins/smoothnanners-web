@@ -54,9 +54,9 @@ export function YouTubeEmbeds(props: { videoIds: Set<string> }) {
                                 target="_blank"
                                 rel="noreferrer"
                                 className={`
-                                  absolute inset-0 flex items-center justify-center
-                                  hover:brightness-75
-                                  motion-safe:transition-all motion-safe:duration-150 motion-safe:ease-in-out
+                                    absolute inset-0 flex items-center justify-center
+                                    hover:brightness-75
+                                    motion-safe:transition-all motion-safe:duration-150 motion-safe:ease-in-out
                                 `}
                                 onClick={e => {
                                     e.preventDefault();
