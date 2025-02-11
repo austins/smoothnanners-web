@@ -17,10 +17,7 @@ const config = ts.config(
         plugins: { "readable-tailwind": readableTailwind },
         rules: {
             ...readableTailwind.configs.error.rules,
-            "readable-tailwind/multiline": [
-                "error",
-                { printWidth: 120, indent: 4, group: "newLine", preferSingleLine: true }
-            ]
+            "readable-tailwind/multiline": ["error", { printWidth: 120, group: "newLine", preferSingleLine: true }]
         }
     },
     prettier,
