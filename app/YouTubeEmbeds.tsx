@@ -1,10 +1,12 @@
 ﻿"use client";
 
 import { PiStarFill } from "react-icons/pi";
-import { useState } from "react";
+import { useRef, useState } from "react";
+import YouTube from "react-youtube";
 
-export function YouTubeEmbeds(props: { videoIds: string[] }) {
-    const [currentId, setCurrentId] = useState<string | null>(null);
+export function YouTubeEmbeds(props: { videoIds: Set<string> }) {
+    const [playedIds, setPlayedIds] = useState(new Set<string>());
+    const youTubeRefs = useRef(new Map<string, YouTube>());
 
     return (
         <>
@@ -12,16 +14,25 @@ export function YouTubeEmbeds(props: { videoIds: string[] }) {
                 <PiStarFill /> Featured
             </h3>
 
-            {props.videoIds.map(id => (
+            {[...props.videoIds].map(id => (
                 <div key={id}>
-                    {currentId === id ? (
-                        <iframe
-                            src={`https://www.youtube.com/embed/${id}?autoplay=1`}
+                    {playedIds.has(id) ? (
+                        <YouTube
+                            videoId={id}
                             title="YouTube Video"
-                            allowFullScreen
-                            allow="autoplay"
-                            className="aspect-video w-full"
-                        ></iframe>
+                            iframeClassName="aspect-video h-auto w-full"
+                            opts={{ playerVars: { autoplay: 1 } }}
+                            onPlay={() => {
+                                for (const [visibleId, youTubeElement] of youTubeRefs.current) {
+                                    if (visibleId !== id) {
+                                        youTubeElement.getInternalPlayer().pauseVideo();
+                                    }
+                                }
+                            }}
+                            ref={element => {
+                                youTubeRefs.current.set(id, element!);
+                            }}
+                        />
                     ) : (
                         <div className="relative">
                             <picture>
@@ -45,7 +56,7 @@ export function YouTubeEmbeds(props: { videoIds: string[] }) {
                                 className="absolute inset-0 flex items-center justify-center transition-all duration-150 ease-in-out hover:brightness-75"
                                 onClick={e => {
                                     e.preventDefault();
-                                    setCurrentId(id);
+                                    setPlayedIds(state => new Set([...state, id]));
                                 }}
                             >
                                 <svg
