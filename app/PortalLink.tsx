@@ -14,8 +14,8 @@ export function PortalLink(props: {
             rel="noreferrer"
             className={twJoin(
                 `
-                    flex items-center gap-1.5 rounded-md border border-gray-600 px-3 py-2
-                    motion-safe:transition-colors motion-safe:duration-150 motion-safe:ease-in-out
+                  flex items-center gap-1.5 rounded-md border border-gray-600 px-3 py-2
+                  motion-safe:transition-colors motion-safe:duration-150 motion-safe:ease-in-out
                 `,
                 props.variant === "red" && `bg-red-600 hover:bg-red-700`,
                 props.variant === "purple" && `bg-purple-600 hover:bg-purple-700`,
