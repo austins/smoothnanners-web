@@ -12,6 +12,7 @@ export const metadata: Metadata = {
 const playpenSansFont = Playpen_Sans({
     display: "swap",
     subsets: ["latin"],
+    weight: "700",
     variable: "--font-playpen-sans"
 });
 
