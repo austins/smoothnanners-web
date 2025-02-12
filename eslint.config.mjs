@@ -11,6 +11,7 @@ const compat = new FlatCompat({ baseDirectory: dirname(fileURLToPath(import.meta
 const config = ts.config(
     { ignores: [".next/", "out/", ".idea/"] },
     eslint.configs.recommended,
+    { rules: { eqeqeq: "error", "require-await": "error" } },
     ...compat.extends("next/core-web-vitals", "next/typescript"),
     {
         files: ["**/*.{jsx,tsx}"],
