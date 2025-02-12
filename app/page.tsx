@@ -9,6 +9,7 @@ import {
     PiInstagramLogo,
     PiMusicNotes,
     PiPiggyBankFill,
+    PiStarFill,
     PiUserCircleFill,
     PiXLogo,
     PiYoutubeLogoFill
@@ -39,6 +40,10 @@ export default function Home() {
                             text="YouTube"
                             href="https://www.youtube.com/channel/UCPjcGsO8o_FKPGHLQ5d1hbg"
                         />
+
+                        <h3 className="flex items-center gap-1.5 italic">
+                            <PiStarFill /> Featured
+                        </h3>
 
                         <YouTubeEmbeds videoIds={new Set(["lnWtTXtXc0A", "XjIJoM1AZyQ"])} />
                     </PortalSection>
