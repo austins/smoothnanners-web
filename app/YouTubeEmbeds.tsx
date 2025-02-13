@@ -2,6 +2,7 @@
 
 import { useRef, useState } from "react";
 import YouTube from "react-youtube";
+import Image from "next/image";
 
 export function YouTubeEmbeds(props: { videoIds: Set<string> }) {
     const [playedIds, setPlayedIds] = useState(new Set<string>());
@@ -28,18 +29,14 @@ export function YouTubeEmbeds(props: { videoIds: Set<string> }) {
                 />
             ) : (
                 <div className="relative">
-                    <picture>
-                        <source type="image/webp" srcSet={`https://i.ytimg.com/vi_webp/${id}/mqdefault.webp`} />
-
-                        <img
-                            src={`https://i.ytimg.com/vi/${id}/mqdefault.jpg`}
-                            alt="YouTube Video"
-                            width={328}
-                            height={186.5}
-                            className="w-full rounded-md"
-                            loading="lazy"
-                        />
-                    </picture>
+                    <Image
+                        src={`https://i.ytimg.com/vi/${id}/mqdefault.jpg`}
+                        alt="YouTube Video"
+                        width={328}
+                        height={186.5}
+                        className="w-full rounded-md"
+                        loading="eager"
+                    />
 
                     <a
                         href={`https://www.youtube.com/watch?v=${id}`}

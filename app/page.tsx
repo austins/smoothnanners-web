@@ -1,4 +1,4 @@
-import avatar from "./avatar.jpg";
+import avatar from "./avatar.webp";
 import Image from "next/image";
 import { PortalSection } from "@/app/PortalSection";
 import {
@@ -22,7 +22,7 @@ export default function Home() {
     return (
         <>
             <div className="flex flex-col items-start gap-3 pb-3 sm:flex-row">
-                <Image src={avatar} alt="SmoothNanners" className="rounded-md object-contain" priority />
+                <Image src={avatar} alt="SmoothNanners" className="rounded-md object-contain" loading="eager" />
 
                 <div>
                     <p>Howdy! My name is Austin.</p>
