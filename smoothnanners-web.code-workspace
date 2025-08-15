@@ -1,0 +1,30 @@
+{
+    "folders": [{ "path": "." }],
+    "extensions": {
+        "recommendations": [
+            "dbaeumer.vscode-eslint",
+            "svelte.svelte-vscode",
+            "bradlc.vscode-tailwindcss",
+            "esbenp.prettier-vscode"
+        ]
+    },
+    "settings": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": { "source.fixAll.eslint": "explicit" },
+        "eslint.validate": ["javascript", "typescript", "svelte"],
+        "typescript.tsdk": "./node_modules/typescript/lib"
+    },
+    "launch": {
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "name": "pnpm run dev",
+                "type": "node-terminal",
+                "request": "launch",
+                "cwd": "${workspaceFolder}",
+                "command": "pnpm run dev"
+            }
+        ]
+    }
+}
