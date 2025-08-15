@@ -15,6 +15,9 @@ Thumbs.db
 # Env
 .env*.local
 
+# TypeScript
+*.tsbuildinfo
+
 # Vite
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
