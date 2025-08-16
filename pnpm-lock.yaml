@@ -14,9 +14,6 @@ importers:
       '@eslint/js':
         specifier: 9.33.0
         version: 9.33.0
-      '@fontsource-variable/playpen-sans':
-        specifier: 5.2.7
-        version: 5.2.7
       '@iconify-json/bi':
         specifier: 1.2.6
         version: 1.2.6
@@ -298,9 +295,6 @@ packages:
   '@eslint/plugin-kit@0.3.5':
     resolution: {integrity: sha512-Z5kJ+wU3oA7MMIqVR9tyZRtjYPr4OC004Q4Rw7pgOKUOKkJfZ3O24nz3WYfGRpMDNmcOi3TwQOmgm7B7Tpii0w==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
-
-  '@fontsource-variable/playpen-sans@5.2.7':
-    resolution: {integrity: sha512-nvSOkq082b7M0UmPidFYh3MLZVSgjyk/eRpE3G0doRyMwtCASlN2gf/JL9rxvjZWNWZ2QzluzxU5u1pp4AMbXw==}
 
   '@humanfs/core@0.19.1':
     resolution: {integrity: sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA==}
@@ -1739,8 +1733,6 @@ snapshots:
     dependencies:
       '@eslint/core': 0.15.2
       levn: 0.4.1
-
-  '@fontsource-variable/playpen-sans@5.2.7': {}
 
   '@humanfs/core@0.19.1': {}
 

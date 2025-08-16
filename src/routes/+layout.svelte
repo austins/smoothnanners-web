@@ -13,13 +13,13 @@
 
 <div
     class="
-        flex min-h-screen items-center bg-blue-950 bg-gradient-to-b from-blue-950 to-blue-800 font-roundsans text-2xl
+        flex min-h-screen items-center bg-blue-950 bg-gradient-to-b from-blue-950 to-blue-800 font-rounded-sans text-2xl
         text-white drop-shadow
     "
 >
     <div class="container py-4">
         <header class="pb-3">
-            <h1 class="font-handwritten text-5xl font-bold">SmoothNanners</h1>
+            <h1 class="font-classical-humanist text-5xl font-bold">SmoothNanners</h1>
         </header>
 
         <main>{@render children?.()}</main>
