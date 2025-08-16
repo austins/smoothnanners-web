@@ -1,36 +1,21 @@
 import type { Handle } from "@sveltejs/kit";
 import { building } from "$app/environment";
-import { minify } from "html-minifier";
-import type { Options as MinificationOptions } from "html-minifier";
+import { minify } from "@swc/html";
+import type { Options as MinificationOptions } from "@swc/html";
 
 const minificationOptions: MinificationOptions = {
-    collapseBooleanAttributes: true,
-    collapseWhitespace: true,
-    conservativeCollapse: true,
-    decodeEntities: true,
-    html5: true,
-    ignoreCustomComments: [/^#/],
-    minifyCSS: true,
-    minifyJS: false,
-    removeAttributeQuotes: true,
-    removeComments: false, // Some hydration code needs comments
-    removeOptionalTags: true,
-    removeRedundantAttributes: true,
-    removeScriptTypeAttributes: true,
-    removeStyleLinkTypeAttributes: true,
-    sortAttributes: true,
-    sortClassName: true
+    removeComments: false // Some hydration code needs comments
 };
 
-export const handle: Handle = async ({ event, resolve }) => {
+export const handle: Handle = ({ event, resolve }) => {
     let page = "";
 
     return resolve(event, {
-        transformPageChunk: ({ html, done }) => {
+        async transformPageChunk({ html, done }) {
             page += html;
 
             if (done) {
-                return building ? minify(page, minificationOptions) : page;
+                return building ? (await minify(page, minificationOptions)).code : page;
             }
         }
     });
