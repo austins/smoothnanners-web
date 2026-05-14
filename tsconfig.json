@@ -32,5 +32,5 @@
         "noUnusedParameters": true,
         "useDefineForClassFields": true
     },
-    "include": ["./*.d.ts", "./*.config.ts", "./src", "./adapters"]
+    "include": ["qwik.env.d.ts", "./*.config.ts", "./src", "./adapters"]
 }
