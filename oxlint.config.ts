@@ -4,6 +4,7 @@ import { defineConfig } from "oxlint";
 import { getDefaultSelectors } from "eslint-plugin-better-tailwindcss/defaults";
 
 export default defineConfig({
+    categories: { correctness: "error", perf: "error" },
     extends: [qwikStrict],
     env: { builtin: true, node: true, browser: true },
     jsPlugins: ["eslint-plugin-better-tailwindcss"],
@@ -16,6 +17,7 @@ export default defineConfig({
     rules: {
         eqeqeq: ["error", "always"],
         "require-await": "error",
+        "typescript/no-explicit-any": "error",
         ...betterTailwindcss.configs["recommended-error"].rules,
         "better-tailwindcss/enforce-consistent-line-wrapping": [
             "error",
