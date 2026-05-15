@@ -1,6 +1,16 @@
 {
     "name": "smoothnanners-web",
     "private": true,
+    "devEngines": {
+        "runtime": {
+            "name": "node",
+            "onFail": "error"
+        },
+        "packageManager": {
+            "name": "pnpm",
+            "onFail": "error"
+        }
+    },
     "type": "module",
     "scripts": {
         "dev": "vite --mode ssr",
